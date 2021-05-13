@@ -3,6 +3,7 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 
 import Navigation from '../components/Navigation/Navigation'
+import PageContent from '../components/PageContent/PageContent'
 import Footer from '../components/Footer/Footer'
 
 export default function Home() {
@@ -15,8 +16,7 @@ export default function Home() {
       </Head>
 
       <Navigation/>
-      
-
+      <PageContent/>
       <Footer/>
     </>
   )

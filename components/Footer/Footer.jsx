@@ -1,12 +1,12 @@
 import React from "react";
 import ExternalLink from "../../helpers/ExternalLink";
 
-import * as styles from "./Styles";
+import * as sc from "./Styles";
 
 const Footer = () => {
   return (
-    <styles.Wrapper>
-      <styles.Links>
+    <sc.Wrapper>
+      <sc.Links>
         <ExternalLink
           link="mailto:jjozic98@gmail.com"
           name="jjozic98@gmail.com"
@@ -16,8 +16,8 @@ const Footer = () => {
           name="Instagram"
         />
         <ExternalLink link="https://github.com/jjozic" name="Github" />
-      </styles.Links>
-    </styles.Wrapper>
+      </sc.Links>
+    </sc.Wrapper>
   );
 };
 

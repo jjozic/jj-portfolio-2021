@@ -7,3 +7,11 @@ export const Wrapper = styled.footer`
     padding: 0 2rem;
     background-color: var(--light);
 `
+
+export const Links = styled.div`
+    max-width: 1400px;
+    padding: 1.5rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+`

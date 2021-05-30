@@ -14,4 +14,11 @@ export const Links = styled.div`
     margin: 0 auto;
     display: flex;
     justify-content: center;
+    & a {
+        margin: 0 1rem;
+        font-weight: bold;
+    }
+    & a:hover {
+        text-decoration: underline;
+    }
 `

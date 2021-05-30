@@ -1,15 +1,24 @@
-import React from 'react'
+import React from "react";
+import ExternalLink from "../../helpers/ExternalLink";
 
-import * as styles from './Styles';
+import * as styles from "./Styles";
 
 const Footer = () => {
-    return (
-        <styles.Wrapper>
-            <styles.Links>
-            <a href="mailto:jjozic98@gmail.com" target="_blank" rel="noreferrer">jjozic98@gmail.com</a> - <a href="https://instagram.com/julianjozic" target="_blank" rel="noreferrer">Instagram</a> - <a href="https://github.com/jjozic" target="_blank" rel="noreferrer">Github</a>
-            </styles.Links>
-        </styles.Wrapper>
-    )
-}
+  return (
+    <styles.Wrapper>
+      <styles.Links>
+        <ExternalLink
+          link="mailto:jjozic98@gmail.com"
+          name="jjozic98@gmail.com"
+        />
+        <ExternalLink
+          link="https://instagram.com/julianjozic"
+          name="Instagram"
+        />
+        <ExternalLink link="https://github.com/jjozic" name="Github" />
+      </styles.Links>
+    </styles.Wrapper>
+  );
+};
 
-export default Footer
+export default Footer;

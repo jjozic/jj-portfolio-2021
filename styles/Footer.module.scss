@@ -1,0 +1,22 @@
+.wrapper {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  padding: 0 2rem;
+  background-color: var(--light);
+}
+
+.links {
+  max-width: 1400px;
+  padding: 1.5rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  & a {
+      margin: 0 1rem;
+      font-weight: bold;
+  }
+  & a:hover {
+      text-decoration: underline;
+  }
+}

@@ -1,13 +1,11 @@
-import React from "react";
-import * as sc from "./Styles";
-
+import styles from '@/styles/PageContent.module.scss';
 
 const PageContent = () => {
   return (
-    <sc.Wrapper>
+    <div className={styles.wrapper}>
       <h1>Hi, I&apos;m Julian Jozic!</h1>
       <p>I&apos;m a frontend-engineer, who also likes designing and working with the backend if I need to!</p>
-    </sc.Wrapper>
+    </div>
   );
 };
 

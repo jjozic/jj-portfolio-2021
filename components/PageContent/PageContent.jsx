@@ -1,12 +1,12 @@
 import React from "react";
-import * as sc from "../Navigation/Styles";
+import * as sc from "./Styles";
 
 
 const PageContent = () => {
   return (
     <sc.Wrapper>
-      <h1>Hi, I'm Julian Jozic!</h1>
-      <p>I'm a frontend-engineer, who also likes designing and working with the backend if I need to!</p>
+      <h1>Hi, I&apos;m Julian Jozic!</h1>
+      <p>I&apos;m a frontend-engineer, who also likes designing and working with the backend if I need to!</p>
     </sc.Wrapper>
   );
 };

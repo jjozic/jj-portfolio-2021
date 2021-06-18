@@ -15,12 +15,22 @@
   align-items: center;
   color: var(--dark);
   font-weight: 700;
-  & div a{
-    margin: 0 2rem;
+  ul {
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    list-style: none;
   }
 }
 
+.logoLi {
+  flex-basis: 50%;
+}
+
 .logo {
+  margin: 0 auto;
   background-color: var(--dark);
   color: var(--light);
   font-size: 2rem;

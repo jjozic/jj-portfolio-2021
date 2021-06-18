@@ -20,3 +20,12 @@
       text-decoration: underline;
   }
 }
+
+.icon {
+  font-size: 1.5rem;
+  color: var(--dark);
+  transition: all 0.2s ease;
+  &:hover {
+    transform: scale(1.2);
+  }
+}

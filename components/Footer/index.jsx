@@ -1,12 +1,10 @@
-import React from "react";
 import ExternalLink from "../../helpers/ExternalLink";
-
-import * as sc from "./Styles";
+import styles from '@/styles/Footer.module.scss';
 
 const Footer = () => {
   return (
-    <sc.Wrapper>
-      <sc.Links>
+    <footer className={styles.wrapper}>
+      <div className={styles.links}>
         <ExternalLink
           link="mailto:jjozic98@gmail.com"
           name="jjozic98@gmail.com"
@@ -16,8 +14,8 @@ const Footer = () => {
           name="Instagram"
         />
         <ExternalLink link="https://github.com/jjozic" name="Github" />
-      </sc.Links>
-    </sc.Wrapper>
+      </div>
+    </footer>
   );
 };
 

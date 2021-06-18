@@ -2,3 +2,10 @@
   max-width: 1400px;
   margin: 0 auto;
 }
+
+.links a{
+  background-color: var(--dark);
+  color: #fff;
+  min-width: 100px;
+  min-height: 500px;
+}

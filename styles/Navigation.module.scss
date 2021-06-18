@@ -15,4 +15,19 @@
   align-items: center;
   color: var(--dark);
   font-weight: 700;
+  & div a{
+    margin: 0 2rem;
+  }
+}
+
+.logo {
+  background-color: var(--dark);
+  color: var(--light);
+  font-size: 2rem;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

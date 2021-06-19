@@ -5,6 +5,7 @@ import styles from '@/styles/Home.module.scss'
 import Navigation from '@/components/Navigation'
 import PageContent from '@/components/PageContent'
 import Footer from '@/components/Footer'
+import Projects from '@/components/Projects'
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
 
       <Navigation/>
       <PageContent/>
+      <Projects/>
       <Footer/>
     </>
   )

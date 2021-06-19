@@ -3,9 +3,30 @@
   margin: 0 auto;
 }
 
-.links a{
-  background-color: var(--dark);
-  color: #fff;
-  min-width: 100px;
-  min-height: 500px;
+.links {
+  display: flex;
+}
+
+.links a {
+  width: 150px;
+  padding: 1rem;
+  margin-right: 1rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--light);
+  color: var(--dark);
+  border: 2px solid var(--dark);
+  border-radius: 10px;
+  text-transform: uppercase;
+  transition: all 0.2s ease;
+  & svg {
+    margin-right: 0.25rem;
+  }
+  &:hover {
+    background-color: var(--dark);
+    color: var(--light);
+  }
 }

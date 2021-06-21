@@ -15,10 +15,8 @@ export default function Home() {
         <meta name="description" content="Julian Jozic. Web Developer" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
       <Navigation/>
       <PageContent/>
-      <Projects/>
       <Footer/>
     </>
   )

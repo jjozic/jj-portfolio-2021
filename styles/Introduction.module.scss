@@ -1,10 +1,11 @@
 .wrapper {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  padding: 8rem 0;
 }
 
 .imgWrapper {
-  margin: 2em;
+  margin: 2rem 6rem;
   border-radius: 50%;
   & img {
     border-radius: 30px;

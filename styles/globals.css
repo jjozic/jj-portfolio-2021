@@ -24,3 +24,9 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.heading {
+  text-align: center;
+  font-size: 2rem;
+  color: var(--dark);
+}

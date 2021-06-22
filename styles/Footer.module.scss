@@ -3,7 +3,7 @@
   position: fixed;
   bottom: 0;
   padding: 0 2rem;
-  background-color: var(--light);
+  background-color: var(--primary);
 }
 
 .links {
@@ -23,7 +23,7 @@
 
 .icon {
   font-size: 1.5rem;
-  color: var(--dark);
+  color: var(--light);
   transition: all 0.2s ease;
   &:hover {
     transform: scale(1.2);

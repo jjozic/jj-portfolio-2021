@@ -2,7 +2,9 @@
   position: sticky;
   top: 0;
   width: 100%;
-  background-color: var(--light);
+  // background-color: var(--light);
+  background-color: rgba(105, 150, 202, 0.8);
+  backdrop-filter: saturate(180%) blur(5px);
   padding: 0 2rem;
   z-index: 100;
 }

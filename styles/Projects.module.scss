@@ -1,21 +1,26 @@
 .wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 48px;
-    
-    article {
-        height: 200px;
-        min-width: 350px;
-        border-radius: 10px;
-        color: var(--light);
-        background-color: var(--dark);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
 
-    article:nth-of-type(even){
-        transform: translateY(calc(50% + 24px));
-    }
+  article {
+    height: 200px;
+    min-width: 350px;
+    border-radius: 10px;
+    color: var(--dark);
+    border: 3px solid var(--dark);
+    background: rgb(255, 255, 255);
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 1) 42%,
+      rgba(205, 213, 251, 1) 100%
+    );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  article:nth-of-type(even) {
+    transform: translateY(calc(50% + 24px));
+  }
 }
-

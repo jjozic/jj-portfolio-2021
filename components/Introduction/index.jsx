@@ -9,7 +9,7 @@ export default function Introduction() {
   return (
     <div className={styles.wrapper}>
       <div className={styles.introduction}>
-        <h1>Hi, I&apos;m Julian Jozic!</h1>
+        <h1>Hi, I&apos;m <strong>Julian Jozic!</strong></h1>
         <p>
           I&apos;m a frontend-engineer, who also likes designing and working
           with the backend if I need to!

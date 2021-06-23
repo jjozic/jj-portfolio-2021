@@ -1,10 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700');
-
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700");
 
 :root {
-  --primary: #5771F3;
-  --dark: #0B24A1;
-  --light: #CDD5FB;
+  --primary: #5771f3;
+  --dark: #0b24a1;
+  --light: #cdd5fb;
 }
 
 html,
@@ -13,7 +12,10 @@ body {
   margin: 0;
   /* font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif; */
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
 }
 
 a {

@@ -1,4 +1,4 @@
-import { FiGithub, FiInstagram, FiMail } from "react-icons/fi";
+import { FiGithub, FiLinkedin, FiMail } from "react-icons/fi";
 
 import ExternalLink from "@/helpers/ExternalLink";
 import styles from "@/styles/Footer.module.scss";
@@ -8,15 +8,16 @@ const Footer = () => {
     <footer className={styles.wrapper}>
       <div className={styles.links}>
         <ExternalLink link="mailto:jjozic98@gmail.com">
-          <FiMail className={styles.icon}/>
+          <FiMail className={styles.icon} />
         </ExternalLink>
-        <ExternalLink link="https://instagram.com/julianjozic">
-          <FiInstagram className={styles.icon}/>
+        <ExternalLink link="https://www.linkedin.com/in/julian-jozic-4661a416b/">
+          <FiLinkedin className={styles.icon} />
         </ExternalLink>
         <ExternalLink link="https://github.com/jjozic">
-          <FiGithub className={styles.icon}/>
+          <FiGithub className={styles.icon} />
         </ExternalLink>
       </div>
+      <p>©2021 Julian Jozic - Built with NextJS</p>
     </footer>
   );
 };

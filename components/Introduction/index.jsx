@@ -7,7 +7,7 @@ import styles from "@/styles/Introduction.module.scss";
 
 export default function Introduction() {
   return (
-    <div className={styles.wrapper}>
+    <section className={styles.wrapper}>
       <div className={styles.introduction}>
         <h1>Hi, I&apos;m <strong>Julian Jozic!</strong></h1>
         <p>
@@ -26,6 +26,6 @@ export default function Introduction() {
       <div className={styles.imgWrapper}>
         <Image src={profilePic} alt="Picture of me" height={150} width={150} />
       </div>
-    </div>
+    </section>
   );
 }

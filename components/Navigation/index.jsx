@@ -5,8 +5,8 @@ import styles from "@/styles/Navigation.module.scss";
 
 const Navigation = () => {
   return (
-    <nav className={styles.navElement}>
-      <div className={styles.wrapper}>
+    <header className={styles.navElement}>
+      <nav className={styles.wrapper}>
         <ul>
           <li>
             <Link href="#projects">Projects</Link>
@@ -24,8 +24,8 @@ const Navigation = () => {
             <Link href="#resume">Dark Mode</Link>
           </li>
         </ul>
-      </div>
-    </nav>
+      </nav>
+    </header>
   );
 };
 

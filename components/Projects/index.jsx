@@ -2,7 +2,7 @@ import styles from "@/styles/Projects.module.scss";
 
 export default function Projects() {
   return (
-    <div>
+    <section>
       <h2 className="heading">Personal Projects</h2>
       <div className={styles.wrapper}>
         <article>Project1</article>
@@ -11,6 +11,6 @@ export default function Projects() {
         <article>Project4</article>
         <article>Project5</article>
       </div>
-    </div>
+    </section>
   );
 }

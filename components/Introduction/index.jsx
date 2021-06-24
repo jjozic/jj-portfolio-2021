@@ -11,8 +11,7 @@ export default function Introduction() {
       <div className={styles.introduction}>
         <h1>Hi, I&apos;m <strong>Julian Jozic!</strong></h1>
         <p>
-          I&apos;m a frontend-engineer, who also likes designing and working
-          with the backend if I need to!
+          I&apos;m a frontend-engineer, with a knack for UI!
         </p>
         <div className={styles.links}>
           <ExternalLink link="mailto:jjozic98@gmail.com">

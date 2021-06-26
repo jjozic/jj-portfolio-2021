@@ -16,19 +16,21 @@ const Navigation = () => {
       <nav className={styles.wrapper}>
         <ul>
           <li>
-            <Link href="#projects">Projects</Link>
+            <Link href="projects">Projects</Link>
           </li>
           <li>
             <Link href="#contact">Contact Me</Link>
           </li>
           <li className={styles.logoLi}>
-            <div className={styles.logo}>JJ</div>
+            <Link href="/" >
+              <div className={styles.logo}>JJ</div>
+            </Link>
           </li>
           <li>
-            <Link href="#projects">Language</Link>
+            <Link href="#">Language</Link>
           </li>
           <li>
-            <button onClick={handleClick}>
+            <button className={styles.toggleBtn} onClick={handleClick}>
               {toggle ? <FiMoon /> : <FiSun />}
             </button>
           </li>

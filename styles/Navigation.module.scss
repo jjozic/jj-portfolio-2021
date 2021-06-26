@@ -2,8 +2,7 @@
   position: sticky;
   top: 0;
   width: 100%;
-  // background-color: var(--light);
-  background-color: rgba(87, 113, 243, 0.8);
+  background-color: var(--nav-clr);
   backdrop-filter: saturate(180%) blur(5px);
   padding: 0 2rem;
   z-index: 100;

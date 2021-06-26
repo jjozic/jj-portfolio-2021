@@ -27,8 +27,10 @@ const Navigation = () => {
           <li>
             <Link href="#projects">Language</Link>
           </li>
-          <li onClick={handleClick}>
+          <li>
+            <button onClick={handleClick}>
               {toggle ? <FiMoon /> : <FiSun />}
+            </button>
           </li>
         </ul>
       </nav>

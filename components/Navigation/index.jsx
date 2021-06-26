@@ -22,7 +22,7 @@ const Navigation = () => {
             <Link href="#contact">Contact Me</Link>
           </li>
           <li className={styles.logoLi}>
-            <Link href="/" >
+            <Link href="/" passHref>
               <div className={styles.logo}>JJ</div>
             </Link>
           </li>

@@ -4,6 +4,7 @@
   --primary: #5771f3;
   --dark: #0b24a1;
   --light: #cdd5fb;
+  scroll-behavior: smooth;
 }
 
 html,

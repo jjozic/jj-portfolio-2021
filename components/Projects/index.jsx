@@ -1,29 +1,20 @@
-import { useState } from "react";
 import Image from "next/image";
 
 import styles from "@/styles/Projects.module.scss";
-import { project } from "../../data/projects.js";
+import { project } from "../../data/data";
 
-export const getStaticProps = async () => {
-  return {
-    props: {
-      data: project,
-    },
-  };
-};
-
-export default function Projects({ data }) {
+export default function Projects({ projects }) {
   return (
     <section>
       <h2 className="heading">Personal Projects</h2>
       <div className={styles.wrapper}>
-        {data.map((p) => {
-          <article>
+        {projects.map((p, i) => (
+          <article key={i}>
             <h3>{p.title}</h3>
-            <Image src={p.image} alt="test" />
+            <Image src={p.image} alt="test" layout="fill" />
             <p>{p.description}</p>
-          </article>;
-        })}
+          </article>
+        ))}
       </div>
     </section>
   );

@@ -5,11 +5,11 @@ import Experience from "@/components/Experience";
 import Contact from "@/components/Contact";
 import Skills from "@/components/Skills";
 
-const PageContent = () => {
+const PageContent = ({projects}) => {
   return (
     <div className={styles.wrapper}>
       <Introduction />
-      <Projects />
+      <Projects projects={projects}/>
       <Experience />
       <Skills />
       <Contact />

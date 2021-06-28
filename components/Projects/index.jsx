@@ -11,7 +11,7 @@ export default function Projects({ projects }) {
         {projects.map((p, i) => (
           <article key={i}>
             <h3>{p.title}</h3>
-            <Image src={p.image} alt="test" layout="fill" />
+            <Image src="https://picsum.photos/200/300/?blur" alt="test" layout="fill" />
             <p>{p.description}</p>
           </article>
         ))}

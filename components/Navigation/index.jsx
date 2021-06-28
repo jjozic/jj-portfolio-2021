@@ -23,7 +23,7 @@ const Navigation = () => {
           </li>
           <li className={styles.logoLi}>
             <Link href="/" passHref>
-              <div className={styles.logo}>&#123;JJ&#125;</div>
+              <div className={styles.logo}>JJ</div>
             </Link>
           </li>
           <li>

@@ -4,6 +4,8 @@
   --primary: #5771f3;
   --dark: #0b24a1;
   --light: #cdd5fb;
+  --nav-clr: rgba(87, 113, 243, 0.8);
+  scroll-behavior: smooth;
 }
 
 html,

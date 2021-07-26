@@ -1,15 +1,20 @@
-import styles from "@/styles/Projects.module.scss";
+import Image from "next/image";
 
-export default function Projects() {
+import styles from "@/styles/Projects.module.scss";
+import { project } from "../../data/data";
+
+export default function Projects({ projects }) {
   return (
     <section>
       <h2 className="heading">Personal Projects</h2>
       <div className={styles.wrapper}>
-        <article>Project1</article>
-        <article>Project2</article>
-        <article>Project3</article>
-        <article>Project4</article>
-        <article>Project5</article>
+        {projects.map((p, i) => (
+          <article key={i}>
+            <h3>{p.title}</h3>
+            <Image src="https://picsum.photos/200/300/?blur" alt="test" layout="fill" />
+            <p>{p.description}</p>
+          </article>
+        ))}
       </div>
     </section>
   );

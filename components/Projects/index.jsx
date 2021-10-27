@@ -1,7 +1,7 @@
 import Image from "next/image";
+import Link from 'next/link';
 
 import styles from "@/styles/Projects.module.scss";
-import { project } from "../../data/data";
 
 export default function Projects({ projects }) {
   return (
@@ -11,8 +11,12 @@ export default function Projects({ projects }) {
         {projects.map((p, i) => (
           <article key={i}>
             <h3>{p.title}</h3>
-            <Image src="https://picsum.photos/200/300/?blur" alt="test" layout="fill" />
+            {/* <Image src="https://picsum.photos/200/300/?blur" alt="test" width="300" height="200"/> */}
             <p>{p.description}</p>
+            <div className="links">
+              <Link href="github.com">Github</Link>
+              <Link href="test.com">Live</Link>
+            </div>
           </article>
         ))}
       </div>

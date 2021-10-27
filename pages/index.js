@@ -34,7 +34,7 @@ export async function getStaticProps() {
       projects: [
         {
           title: "Projects coming soon...",
-          image: "https://picsum.photos/200/300/?blur",
+          // image: "https://picsum.photos/200/300/?blur",
           description: "",
         },
       ],

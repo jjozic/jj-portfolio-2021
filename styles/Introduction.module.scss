@@ -37,8 +37,8 @@
     margin-right: 0.25rem;
   }
   &:hover {
-    background-color: var(--dark);
-    color: var(--light);
+    box-shadow: 8px 8px 33px #979db7, -8px -8px 33px #d3e0f1;
+    transform: scale(1.05);
   }
 }
 

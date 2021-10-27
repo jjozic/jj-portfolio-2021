@@ -16,7 +16,7 @@ const Navigation = () => {
       <nav className={styles.wrapper}>
         <ul>
           <li>
-            <Link href="projects">Projects</Link>
+            <Link href="#projects">Projects</Link>
           </li>
           <li>
             <Link href="#contact">Contact Me</Link>

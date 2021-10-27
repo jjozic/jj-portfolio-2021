@@ -10,7 +10,7 @@ const Footer = () => {
         <ExternalLink link="mailto:jjozic98@gmail.com">
           <FiMail className={styles.icon} />
         </ExternalLink>
-        <ExternalLink link="https://www.linkedin.com/in/julian-jozic-4661a416b/">
+        <ExternalLink link="https://www.linkedin.com/in/jjozic">
           <FiLinkedin className={styles.icon} />
         </ExternalLink>
         <ExternalLink link="https://github.com/jjozic">

@@ -5,6 +5,8 @@
   --dark: #0b24a1;
   --light: #cdd5fb;
   --nav-clr: rgba(87, 113, 243, 0.8);
+  --boxshadow: 8px 8px 33px #b0b7d8, -8px -8px 33px #eaf3ff;
+  --boxshadow-big: 8px 8px 33px #979db7, -8px -8px 33px #d3e0f1;;
   scroll-behavior: smooth;
 }
 

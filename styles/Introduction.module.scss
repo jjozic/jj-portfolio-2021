@@ -1,7 +1,7 @@
 .wrapper {
   display: flex;
   justify-content: center;
-  padding: 8rem 0;
+  padding: 4rem 0;
 }
 
 .introduction{
@@ -28,7 +28,7 @@
   align-items: center;
   border-radius: 10px;
   background: linear-gradient(145deg, #dbe4ff, #b9c0e2);
-  box-shadow: 8px 8px 33px #b0b7d8, -8px -8px 33px #eaf3ff;
+  box-shadow: var(--boxshadow);
   color: var(--dark);
   text-transform: uppercase;
   transition: all 0.2s ease;
@@ -36,7 +36,7 @@
     margin-right: 0.25rem;
   }
   &:hover {
-    box-shadow: 8px 8px 33px #979db7, -8px -8px 33px #d3e0f1;
+    box-shadow: var(--boxshadow-big);
     transform: scale(1.05);
   }
 }
@@ -45,6 +45,7 @@
   margin: 2rem 6rem;
   border-radius: 50%;
   & img {
-    border-radius: 30px;
+    border-radius: 24px;
+    box-shadow: var(--boxshadow);
   }
 }

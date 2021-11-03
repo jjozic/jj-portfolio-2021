@@ -9,10 +9,10 @@ export default function Introduction() {
   return (
     <section className={styles.wrapper}>
       <div className={styles.introduction}>
-        <h1>Hi, I&apos;m <strong>Julian Jozic!</strong></h1>
-        <p>
-          I&apos;m a Front End Developer, with a love for modern UIs!
-        </p>
+        <h1>
+          Hi, I&apos;m <strong>Julian Jozic!</strong>
+        </h1>
+        <p>I&apos;m a Front End Developer, with a love for modern UIs!</p>
         <div className={styles.links}>
           <ExternalLink link="mailto:jjozic98@gmail.com">
             <FiMail /> Contact Me
@@ -22,7 +22,10 @@ export default function Introduction() {
           </ExternalLink>
         </div>
       </div>
-      <div className={styles.imgWrapper}>
+      <div
+        className={`${styles.imgWrapper}
+        pattern-dots-md gray-light`}
+      >
         <Image src={profilePic} alt="Picture of me" height={150} width={150} />
       </div>
     </section>

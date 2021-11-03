@@ -12,10 +12,10 @@ export default function Projects({ projects }) {
         {projects.map((project, index) => (
           <article key={index}>
             <h3>{project.title}</h3>
-            <project>{project.description}</project>
+            <div>{project.description}</div>
             <div className={styles.links}>
-              <ExternalLink href="github.com"><FiGithub/></ExternalLink>
-              <ExternalLink href="test.com"><FiGlobe /></ExternalLink>
+              <ExternalLink link={project.github}><FiGithub className={styles.icon}/></ExternalLink>
+              <ExternalLink link={project.website}><FiGlobe className={styles.icon}/></ExternalLink>
             </div>
           </article>
         ))}

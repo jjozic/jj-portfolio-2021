@@ -4,6 +4,7 @@
   gap: 100px;
 
   article {
+    position: relative;
     height: 200px;
     min-width: 350px;
     color: var(--dark);
@@ -22,3 +23,10 @@
   }
 }
 
+.links {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  display: flex;
+  gap: 1rem;
+}

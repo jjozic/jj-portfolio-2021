@@ -12,7 +12,7 @@ const PageContent = ({projects}) => {
       <Projects projects={projects}/>
       <Experience />
       <Skills />
-      <Contact />
+      {/* <Contact /> */}
     </div>
   );
 };

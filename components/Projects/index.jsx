@@ -12,9 +12,8 @@ export default function Projects({ projects }) {
         {projects.map((project, index) => (
           <article key={index}>
             <h3>{project.title}</h3>
-            {/* <Image src="https://picsum.photos/200/300/?blur" alt="test" width="300" height="200"/> */}
             <project>{project.description}</project>
-            <div className="links">
+            <div className={styles.links}>
               <ExternalLink href="github.com"><FiGithub/></ExternalLink>
               <ExternalLink href="test.com"><FiGlobe /></ExternalLink>
             </div>

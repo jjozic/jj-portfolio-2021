@@ -5,9 +5,9 @@ import styles from '@/styles/Home.module.scss'
 import Navigation from '@/components/Navigation'
 import PageContent from '@/components/PageContent'
 import Footer from '@/components/Footer'
-import { project } from '../data/data'
+import { projects, experiences } from '../data/data'
 
-export default function Home({ projects }) {
+export default function Home({ projects, experiences }) {
   return (
     <>
       <Head>
@@ -16,7 +16,7 @@ export default function Home({ projects }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navigation />
-      <PageContent projects={projects}/>
+      <PageContent projects={projects} experiences={experiences}/>
      
       <Footer />
     </>
@@ -24,13 +24,11 @@ export default function Home({ projects }) {
 }
 
 export async function getStaticProps() {
-
-  if (!project) {
+  if (!projects) {
     return {
       projects: [
         {
           title: "Projects coming soon...",
-          // image: "https://picsum.photos/200/300/?blur",
           description: "",
         },
       ],
@@ -39,7 +37,8 @@ export async function getStaticProps() {
 
   return {
     props: {
-      projects: project,
+      projects,
+      experiences
     },
   };
 }

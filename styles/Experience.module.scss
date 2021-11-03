@@ -1,3 +1,27 @@
-.experience *{
-    max-width: 50ch;
+
+.experience {
+    max-width: 100ch;
+}
+
+.expHeader {
+    line-height: 1.5;
+}
+
+.role {
+    color: rgba(0,0,0,0.5);
+}
+
+.name{
+    color: var(--dark);
+    font-weight: 800;
+    margin-top: .5rem;
+}
+
+.date{
+    color: white;
+    background-color: var(--primary);
+    display: inline;
+    padding: 0.5rem;
+    margin: 1rem 0;
+    border-radius: 6px;
 }

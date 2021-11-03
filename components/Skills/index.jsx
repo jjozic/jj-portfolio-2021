@@ -1,7 +1,7 @@
 import styles from "@/styles/Skills.module.scss";
 
 const languages = ["JavaScript", "TypeScript", "HTML", "CSS", "C#", "Java"];
-const technologies = ["ReactJS", "VueJS", "NodeJS", "NextJS", "jQuery", "SASS", "REST APIs", "Git"];
+const technologies = ["ReactJS", "NodeJS", "NextJS", "VueJS", "jQuery", "SASS", "REST APIs", "Git"];
 const others = ["Agile", "TDD", "FP", "UI Design"];
 
 function Skill({ name, key }) {

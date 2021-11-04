@@ -5,7 +5,7 @@ import styles from '@/styles/Home.module.scss'
 import Navigation from '@/components/Navigation'
 import PageContent from '@/components/PageContent'
 import Footer from '@/components/Footer'
-import { projects, experiences } from '../data/data'
+import { projects, experiences, skills } from '../data/data'
 
 export default function Home({ projects, experiences }) {
   return (
@@ -16,7 +16,7 @@ export default function Home({ projects, experiences }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navigation />
-      <PageContent projects={projects} experiences={experiences}/>
+      <PageContent projects={projects} experiences={experiences} skills={skills}/>
      
       <Footer />
     </>
@@ -38,7 +38,8 @@ export async function getStaticProps() {
   return {
     props: {
       projects,
-      experiences
+      experiences,
+      skills
     },
   };
 }

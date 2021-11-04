@@ -52,3 +52,16 @@ export const experiences = [{
     ],
     stack: "JavaScript, React"
 },];
+
+export const skills = [{
+    name: "Languages",
+    skills: ["JavaScript", "TypeScript", "HTML", "CSS", "C#", "Java"],
+},
+{
+    name: "Technologies",
+    skills: ["ReactJS", "NodeJS", "NextJS", "VueJS", "jQuery", "SASS", "REST APIs", "Git"],
+},
+{
+    name: "Other",
+    skills: ["Agile", "TDD", "FP", "UI Design"],
+}];

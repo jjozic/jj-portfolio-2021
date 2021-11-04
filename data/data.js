@@ -18,40 +18,40 @@ export const projects = [{
     website: "https://github.com/jjozic"
 }];
 
-export const experiences = [{
-    duration: "2018 - 2019",
-    name: "Cosmo Consult GmbH",
-    role: "Junior Full Stack Developer",
-    points: [
-        {
-            content: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam fugit ex quia. Iste, nihil laboriosam! "
-        },
-        {
-            content: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam fugit ex quia. Iste, nihil laboriosam! "
-        },
-        {
-            content: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam fugit ex quia. Iste, nihil laboriosam! "
-        }
-    ],
-    stack: "JavaScript, C#"
-},
-{
-    duration: "Jul 2020 - Current",
-    name: "RIS GmbH",
-    role: "Front-End Developer",
-    points: [
-        {
-            content: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam fugit ex quia. Iste, nihil laboriosam! "
-        },
-        {
-            content: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam fugit ex quia. Iste, nihil laboriosam! "
-        },
-        {
-            content: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam fugit ex quia. Iste, nihil laboriosam!"
-        }
-    ],
-    stack: "JavaScript, React"
-},];
+export const experiences = [
+    {
+        duration: "Jul 2020 - Current",
+        name: "RIS GmbH",
+        role: "Front-End Developer",
+        points: [
+            {
+                content: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam fugit ex quia. Iste, nihil laboriosam! "
+            },
+            {
+                content: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam fugit ex quia. Iste, nihil laboriosam! "
+            },
+            {
+                content: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam fugit ex quia. Iste, nihil laboriosam!"
+            }
+        ],
+        stack: "JavaScript, React"
+    }, {
+        duration: "2018 - 2019",
+        name: "Cosmo Consult GmbH",
+        role: "Junior Full Stack Developer",
+        points: [
+            {
+                content: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam fugit ex quia. Iste, nihil laboriosam! "
+            },
+            {
+                content: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam fugit ex quia. Iste, nihil laboriosam! "
+            },
+            {
+                content: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam fugit ex quia. Iste, nihil laboriosam! "
+            }
+        ],
+        stack: "JavaScript, C#"
+    },];
 
 export const skills = [{
     name: "Languages",

@@ -12,7 +12,7 @@ export default function Introduction() {
         <h1>
           Hi, I&apos;m <strong>Julian Jozic!</strong>
         </h1>
-        <p>I&apos;m a Front End Developer, with a love for modern UIs!</p>
+        <p>I&apos;m a Front End Developer, with a love for modern technologies & UIs!</p>
         <div className={styles.links}>
           <ExternalLink link="mailto:jjozic98@gmail.com">
             <FiMail /> Contact Me

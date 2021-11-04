@@ -6,7 +6,7 @@ import styles from "@/styles/Projects.module.scss";
 
 export default function Projects({ data }) {
   return (
-    <section>
+    <section id="projects">
       <h2 className="heading">Personal Projects</h2>
       <div className={styles.wrapper}>
         {data.map((project, index) => (

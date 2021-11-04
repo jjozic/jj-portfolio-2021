@@ -6,36 +6,42 @@ const others = ["Agile", "TDD", "FP", "UI Design"];
 
 function Skill({ name, key }) {
   return (
-    <div className={styles.skillElement} key={key}>
+    <span className={styles.skillElement} key={key}>
       {name}
-    </div>
+    </span>
   );
 }
 
 export default function Skills() {
   return (
-    <div>
+    <section>
       <h2 className="heading">Skills</h2>
       <div className={styles.wrapper}>
-        <p>
-          Languages:
-          {languages.map((language, index) => (
-            <Skill name={language} key={index} />
-          ))}
-        </p>
-        <p>
-          Technologies:
-          {technologies.map((technology, index) => (
-            <Skill name={technology} key={index} />
-          ))}
-        </p>
-        <p>
-          Other:
-          {others.map((other, index) => (
-            <Skill name={other} key={index} />
-          ))}
-        </p>
+        <div>
+          <h3>Languages:</h3>
+          <div className={styles.skills}>
+            {languages.map((language, index) => (
+              <Skill name={language} key={index} />
+            ))}
+          </div>
+        </div>
+        <div>
+          <h3>Technologies:</h3>
+          <div className={styles.skills}>
+            {technologies.map((technology, index) => (
+              <Skill name={technology} key={index} />
+            ))}
+          </div>
+        </div>
+        <div>
+          <h3>Other:</h3>
+          <div className={styles.skills}>
+            {others.map((other, index) => (
+              <Skill name={other} key={index} />
+            ))}
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
   );
 }

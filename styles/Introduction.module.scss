@@ -1,6 +1,7 @@
 .wrapper {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: wrap-reverse;
+  column-gap: 4rem;
   justify-content: center;
   padding: 4rem 0;
 }
@@ -8,9 +9,12 @@
 .introduction {
   h1 {
     margin: 1rem 0;
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 400;
     color: var(--dark);
+    @media screen and (min-width: 769px) {
+      font-size: 4rem;
+    }
   }
   p {
     font-size: 1.5rem;
@@ -46,7 +50,7 @@
 .imgWrapper {
   background-image: radial-gradient(var(--primary) 1px, var(--background) 1px);
   background-size: calc(10 * 1px) calc(10 * 1px);
-  margin: 4rem 0 0 4rem;
+  margin-top: 5rem;
   & > span {
     transform: translate(35px, -20px);
   }

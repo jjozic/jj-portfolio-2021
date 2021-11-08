@@ -17,7 +17,7 @@ const Footer = () => {
           <FiGithub className={styles.icon} />
         </ExternalLink>
       </div>
-      <p>©2021 Julian Jozic - Built with NextJS</p>
+      <p>©2021 Julian Jozic - Built with Next.js</p>
     </footer>
   );
 };

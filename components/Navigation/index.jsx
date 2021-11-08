@@ -19,19 +19,19 @@ const Navigation = () => {
     <header className={styles.navElement}>
       <nav className={styles.wrapper}>
         <ul>
-          <li>
-            <Link href="#projects">Projects</Link>
-          </li>
-          <li>
-            <Link href="#contact">Contact Me</Link>
-          </li>
           <li className={styles.logoLi}>
-            <Link href="/" passHref>
+            <Link href="/" passHref onClick={() => window.scrollTo({top: 0})}>
               <div className={styles.logo}>JJ</div>
             </Link>
           </li>
           <li>
-            <Link href="#">Language</Link>
+            <Link href="#projects">Projects</Link>
+          </li>
+          <li>
+            <Link href="#experience">Experience</Link>
+          </li>
+          <li>
+            <Link href="#skills">Skills</Link>
           </li>
           <li>
             <button className={styles.toggleBtn} onClick={changeTheme}>

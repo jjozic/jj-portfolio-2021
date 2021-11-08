@@ -2,7 +2,7 @@ import styles from "@/styles/Experience.module.scss";
 
 export default function Experience({ data }) {
   return (
-    <section>
+    <section id="experience">
       <h2 className="heading">Work Experience</h2>
       {data?.map((experience, index) => (
         <div key={index} className={styles.experience}>
@@ -13,7 +13,7 @@ export default function Experience({ data }) {
           </div>
           <ul className={styles.expDescription}>
             {experience?.points?.map((point, index) => (
-              <li key={index}>{point.content}</li>
+              <li key={index}>{point}</li>
             ))}
           </ul>
         </div>

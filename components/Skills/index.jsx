@@ -10,7 +10,7 @@ function Skill({ name, key }) {
 
 export default function Skills({ data }) {
   return (
-    <section>
+    <section id="skills">
       <h2 className="heading">Skills</h2>
       <div className={styles.wrapper}>
         {data.map((s, index) => (

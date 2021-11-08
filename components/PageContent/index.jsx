@@ -7,13 +7,13 @@ import Skills from "@/components/Skills";
 
 const PageContent = ({projects, experiences, skills}) => {
   return (
-    <div className={styles.wrapper}>
+    <main className={styles.wrapper}>
       <Introduction />
       <Projects data={projects}/>
       <Experience data={experiences}/>
       <Skills data={skills}/>
       {/* <Contact /> */}
-    </div>
+    </main>
   );
 };
 

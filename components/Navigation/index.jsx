@@ -1,14 +1,18 @@
-import React, { useState } from "react";
 import Link from "next/link";
 import { FiMoon, FiSun } from "react-icons/fi";
+import { useTheme } from "next-themes";
 
 import styles from "@/styles/Navigation.module.scss";
 
 const Navigation = () => {
-  const [toggle, setToggle] = useState(false);
+  const { theme, setTheme } = useTheme();
 
-  const handleClick = () => {
-    setToggle(!toggle);
+  const changeTheme = () => {
+    if (theme === "light") {
+      setTheme("dark");
+    } else {
+      setTheme("light");
+    }
   };
 
   return (
@@ -30,8 +34,8 @@ const Navigation = () => {
             <Link href="#">Language</Link>
           </li>
           <li>
-            <button className={styles.toggleBtn} onClick={handleClick}>
-              {toggle ? <FiMoon /> : <FiSun />}
+            <button className={styles.toggleBtn} onClick={changeTheme}>
+              {theme === "light" ? <FiMoon /> : <FiSun />}
             </button>
           </li>
         </ul>

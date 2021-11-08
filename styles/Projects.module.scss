@@ -11,8 +11,8 @@
     color: var(--dark);
     border-radius: 20px;
     border-radius: 24px;
-    background: linear-gradient(145deg, #dbe4ff, #b9c0e2);
-    box-shadow: 11px 11px 65px #9aa0bc, -11px -11px 65px #ffffff;
+    background: var(--project-background);
+    box-shadow: var(--boxshadow-project);
     display: flex;
     flex-direction: column;
     justify-content: center;

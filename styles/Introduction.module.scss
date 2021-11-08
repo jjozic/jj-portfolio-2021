@@ -33,7 +33,7 @@
   box-shadow: var(--boxshadow);
   color: var(--dark);
   text-transform: uppercase;
-  transition: all 0.2s ease;
+  transition: transform 0.2s ease;
   & svg {
     margin-right: 0.25rem;
   }
@@ -44,7 +44,7 @@
 }
 
 .imgWrapper {
-  background-image: radial-gradient(var(--primary) 1px, #fff 1px);
+  background-image: radial-gradient(var(--primary) 1px, var(--background) 1px);
   background-size: calc(10 * 1px) calc(10 * 1px);
   margin: 4rem 0 0 4rem;
   & > span {

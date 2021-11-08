@@ -14,12 +14,17 @@ export default function Projects({ data }) {
             <h3>{project.title}</h3>
             <div>{project.description}</div>
             <div className={styles.links}>
-              <ExternalLink link={project.github}>
-                <FiGithub className={styles.icon} />
-              </ExternalLink>
-              <ExternalLink link={project.website}>
-                <FiGlobe className={styles.icon} />
-              </ExternalLink>
+              {project.github && (
+                <ExternalLink link={project.github}>
+                  <FiGithub className={styles.icon} />
+                </ExternalLink>
+              )}
+
+              {project.website && (
+                <ExternalLink link={project.website}>
+                  <FiGlobe className={styles.icon} />
+                </ExternalLink>
+              )}
             </div>
           </article>
         ))}

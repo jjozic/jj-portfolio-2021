@@ -3,7 +3,10 @@
   flex-wrap: wrap-reverse;
   column-gap: 4rem;
   justify-content: center;
-  padding: 4rem 0;
+  padding: 1rem 0;
+  @media screen and (min-width: 769px) {
+    padding: 4rem 0;
+  }
 }
 
 .introduction {
@@ -50,7 +53,10 @@
 .imgWrapper {
   background-image: radial-gradient(var(--primary) 1px, var(--background) 1px);
   background-size: calc(10 * 1px) calc(10 * 1px);
-  margin-top: 5rem;
+  margin-top: 1rem;
+  @media screen and (min-width: 769px) {
+    margin-top: 5rem;
+  }
   & > span {
     transform: translate(35px, -20px);
   }

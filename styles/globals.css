@@ -2,7 +2,7 @@
 
 :root {
   --background: white;
-  --light-text: rgba(0,0,0,0.5);
+  --light-text: rgba(0, 0, 0, 0.5);
   --primary: #5771f3;
   --dark: #0b24a1;
   --light: #cdd5fb;
@@ -14,9 +14,9 @@
   scroll-behavior: smooth;
 }
 
-[data-theme='dark'] {
+[data-theme="dark"] {
   --background: #121212;
-  --light-text: rgba(255,255,255,0.8);
+  --light-text: rgba(255, 255, 255, 0.8);
   --primary: #434d83;
   --dark: #758af4;
   --light: #eaeaea;
@@ -54,9 +54,15 @@ a {
 }
 
 .heading {
-  padding: 3rem 0 1rem 0;
+  padding: 3rem 0 0  0;
   color: var(--dark);
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.5rem;
   text-transform: uppercase;
+}
+@media screen and (min-width: 769px) {
+  .heading {
+    padding: 3rem 0 1rem 0;
+    font-size: 2rem;
+  }
 }

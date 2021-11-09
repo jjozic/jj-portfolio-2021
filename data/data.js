@@ -1,21 +1,12 @@
 export const projects = [
     {
-        title: "Weekend League Tracker",
-        description: "React, Styled-components",
-        stack: "React, Styled-components",
-        github: "https://github.com/jjozic",
-        website: "https://github.com/jjozic"
-    }, {
-        title: "Memento Mori",
-        description: "Reminder of stoic principles",
-        stack: "React, Tailwindcss",
-        github: "https://github.com/jjozic",
-        website: "https://github.com/jjozic"
-    }, {
         title: "Next.js Personal Portfolio",
         description: "The page you are currently on! Built with simplicity in mind.",
-        stack: "React, NextJS, CSS modules (SCSS)",
+        stack: "React.js, Next.js, CSS modules (SCSS)",
         github: "https://github.com/jjozic/jj-portfolio-2021",
+    },
+    {
+        title: "More projects will be added soon..."
     }
 ];
 
@@ -51,10 +42,10 @@ export const skills = [
     },
     {
         name: "Technologies",
-        skills: ["ReactJS", "NodeJS", "NextJS", "VueJS", "jQuery", "SASS", "REST APIs", "Git"],
+        skills: ["React.js", "Node.js", "Next.js", "Vue.js", "jQuery", "SASS", "Styled Components", "Tailwindcss", "REST APIs", "MongoDB", "Git"],
     },
     {
         name: "Other",
-        skills: ["Agile", "TDD", "FP", "UI Design"],
+        skills: ["Agile", "TDD", "FP", "UI Design", "Figma", "Adobe XD"],
     }
 ];

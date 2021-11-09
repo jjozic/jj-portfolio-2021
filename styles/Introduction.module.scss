@@ -12,7 +12,7 @@
 .introduction {
   h1 {
     margin: 1rem 0;
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 400;
     color: var(--dark);
     @media screen and (min-width: 769px) {
@@ -20,7 +20,10 @@
     }
   }
   p {
-    font-size: 1.5rem;
+    font-size: 1rem;
+    @media screen and (min-width: 769px) {
+      font-size: 1.5rem;
+    }
   }
 }
 
@@ -51,13 +54,18 @@
 }
 
 .imgWrapper {
-  background-image: radial-gradient(var(--primary) 1px, var(--background) 1px);
-  background-size: calc(10 * 1px) calc(10 * 1px);
-  margin-top: 1rem;
-  @media screen and (min-width: 769px) {
-    margin-top: 5rem;
-  }
+  max-width: 100px;
   & > span {
-    transform: translate(35px, -20px);
+    border-radius: 6px;
+  }
+  @media screen and (min-width: 769px) {
+    max-width: none;
+    background-image: radial-gradient(var(--primary) 1px, var(--background) 1px);
+    background-size: calc(10 * 1px) calc(10 * 1px);
+    margin-top: 5rem;
+    & > span {
+      border-radius: 0;
+      transform: translate(35px, -20px);
+    }
   }
 }

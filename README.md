@@ -1,16 +1,34 @@
+# Personal Portfolio
+
+I used [Next.js](https://nextjs.org/) to build my new portfolio website because I wanted to make a SEO-friendly site with React. Next.js is a joy to work with and makes building perfomant websites a piece of cake.
+
+- For the styling I haven't used any fancy CSS framework. I just used CSS-modules with SCSS.
+- For the icons I have used the [react-icons](https://react-icons.github.io/react-icons/) package with the [feather](https://feathericons.com/) icon pack.
+- Using [next-themes](https://github.com/pacocoursey/next-themes) for simple dark mode integration (no white flash, synced across tabs)
+- The UI concept design was built with Figma, but was tailored to my needs during development.
+- The data for the page currently resides in the `/data/data.js` file.
+
+### Light mode:
+![Screenshot of light mode version](/assets/light-mode.png)
+### Dark mode:
+![Screenshot of dark mode version](/assets/dark-mode.png)
+
+## Running the project yourself
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-I used [Next.js](https://nextjs.org/) to build my new portfolio website because I wanted to make a SEO-friendly site with React. Next.js is a joy to work with and makes building perfomant websites a peace of cake.
 
-For the styling I haven't used any fancy CSS framework. I just used CSS-modules with SCSS.
 
-For the icons I have used the [react-icons](https://react-icons.github.io/react-icons/) package with the [feather](https://feathericons.com/) icon pack.
-
-The UI concept design was built with Figma, but was tailored to my needs during development.
-
-The data for the page currently resides in the `/data/data.js` file.
 
 ## Getting Started
+
+First, install all dependencies:
+
+```bash
+npm install
+# or
+yarn add
+```
 
 First, run the development server:
 

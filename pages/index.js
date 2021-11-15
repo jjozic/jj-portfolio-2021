@@ -19,7 +19,7 @@ export default function Home({ projects, experiences }) {
         <link rel="manifest" href="/favicons/site.webmanifest" />
         <link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="#5bbad5" />
         <meta name="msapplication-TileColor" content="#ffc40d" />
-        <meta name="theme-color" content="#ffffff" />
+        <meta name="theme-color" content="#cdd5fb" />
       </Head>
       <Navigation />
       <PageContent projects={projects} experiences={experiences} skills={skills} />

@@ -6,6 +6,13 @@ export const projects = [
         github: "https://github.com/jjozic/jj-portfolio-2021",
     },
     {
+        title: "Memento Mori",
+        description: "Random stoic quote generation and a visual representation of your life",
+        stack: "React.js, Tailwindcss, Axios",
+        github: "https://github.com/jjozic/memento-mori-react",
+        website: "https://mementomorireact.netlify.app/",
+    },
+    {
         title: "More projects will be added soon..."
     }
 ];

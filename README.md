@@ -2,9 +2,11 @@
 
 I used [Next.js](https://nextjs.org/) to build my new portfolio website because I wanted to make a SEO-friendly site with React. Next.js is a joy to work with and makes building perfomant websites a piece of cake.
 
-- For the styling I haven't used any fancy CSS framework. I just used CSS-modules with SCSS.
+- For the styling I haven't used any CSS-in-JS framework for once. I just used CSS-modules with SCSS to keep things simple.
 - For the icons I have used the [react-icons](https://react-icons.github.io/react-icons/) package with the [feather](https://feathericons.com/) icon pack.
 - Using [next-themes](https://github.com/pacocoursey/next-themes) for simple dark mode integration (no white flash, synced across tabs)
+- For deployment I used [Vercel](https://vercel.com/)
+- The domain was purchased from [Porkbun](https://porkbun.com/)
 - The UI concept design was built with Figma, but was tailored to my needs during development.
 - The data for the page currently resides in the `/data/data.js` file.
 

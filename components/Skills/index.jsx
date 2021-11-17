@@ -1,12 +1,5 @@
 import styles from "@/styles/Skills.module.scss";
 
-function Skill({ name, key }) {
-  return (
-    <span className={styles.skillElement} key={key}>
-      {name}
-    </span>
-  );
-}
 
 export default function Skills({ data }) {
   return (
@@ -22,11 +15,19 @@ export default function Skills({ data }) {
             <div className={styles.skills}>
               {s.skills?.map((language, index) => (
                 <Skill name={language} key={index} />
-              ))}
+                ))}
             </div>
           </div>
         ))}
       </div>
     </section>
+  );
+}
+
+function Skill({ name, key }) {
+  return (
+    <span className={styles.skillElement} key={key}>
+      {name}
+    </span>
   );
 }

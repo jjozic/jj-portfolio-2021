@@ -20,7 +20,7 @@ const Navigation = () => {
       <nav className={styles.wrapper}>
         <ul>
           <li className={styles.logoLi}>
-            <Link href="/" passHref onClick={() => window.scrollTo({top: 0})}>
+            <Link href="/" passHref onClick={() => window.scrollTo({ top: 0 })}>
               <div className={styles.logo}>JJ</div>
             </Link>
           </li>
@@ -35,7 +35,11 @@ const Navigation = () => {
           </li>
           <li>
             <button className={styles.toggleBtn} onClick={changeTheme}>
-              {theme === "light" ? <FiMoon /> : <FiSun />}
+              {theme === "light" ? (
+                <FiMoon aria-label="Change to light mode" />
+              ) : (
+                <FiSun aria-label="Change to dark mode" />
+              )}
             </button>
           </li>
         </ul>

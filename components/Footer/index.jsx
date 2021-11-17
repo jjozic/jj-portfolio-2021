@@ -7,13 +7,13 @@ const Footer = () => {
   return (
     <footer className={styles.wrapper}>
       <div className={styles.links}>
-        <ExternalLink link="mailto:jjozic98@gmail.com">
+        <ExternalLink link="mailto:jjozic98@gmail.com" title="My Email">
           <FiMail className={styles.icon} />
         </ExternalLink>
-        <ExternalLink link="https://www.linkedin.com/in/jjozic">
+        <ExternalLink link="https://www.linkedin.com/in/jjozic" title="LinkedIn Profile">
           <FiLinkedin className={styles.icon} />
         </ExternalLink>
-        <ExternalLink link="https://github.com/jjozic">
+        <ExternalLink link="https://github.com/jjozic" title="Github profile">
           <FiGithub className={styles.icon} />
         </ExternalLink>
       </div>

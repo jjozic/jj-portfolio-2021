@@ -2,6 +2,7 @@
 
 :root {
   --background: white;
+  --text: rgba(0, 0, 0, 0.8);
   --light-text: rgba(0, 0, 0, 0.5);
   --primary: #5771f3;
   --dark: #0b24a1;
@@ -16,6 +17,7 @@
 
 [data-theme="dark"] {
   --background: #121212;
+  --text: rgba(255, 255, 255, 0.95);
   --light-text: rgba(255, 255, 255, 0.8);
   --primary: #434d83;
   --dark: #758af4;

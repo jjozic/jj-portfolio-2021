@@ -15,9 +15,11 @@ export default function Projects({ data }) {
           <article key={index}>
             <h3 className={styles.heading}>{project.title}</h3>
             <div className={styles.desc}>{project.description}</div>
-            <div className={styles.stack}>
-              <b>Stack:</b> {project.stack}
-            </div>
+            {project.stack && (
+              <div className={styles.stack}>
+                <b>Stack:</b> {project.stack}
+              </div>
+            )}
             <div className={styles.links}>
               {project.github && (
                 <ExternalLink link={project.github}>

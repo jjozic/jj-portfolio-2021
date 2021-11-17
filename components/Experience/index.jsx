@@ -2,8 +2,11 @@ import styles from "@/styles/Experience.module.scss";
 
 export default function Experience({ data }) {
   return (
-    <section id="experience">
-      <h2 className="heading">Work Experience</h2>
+    <section>
+      <h2 className="heading">
+        Work Experience
+        <span id="experience" className="anchorOffset"></span>
+      </h2>
       {data?.map((experience, index) => (
         <div key={index} className={styles.experience}>
           <div className={styles.expHeader}>

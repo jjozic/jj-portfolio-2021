@@ -10,8 +10,11 @@ function Skill({ name, key }) {
 
 export default function Skills({ data }) {
   return (
-    <section id="skills">
-      <h2 className="heading">Skills</h2>
+    <section>
+      <h2 className="heading">
+        Skills
+        <span id="skills" className="anchorOffset"></span>
+      </h2>
       <div className={styles.wrapper}>
         {data.map((s, index) => (
           <div key={index}>

@@ -10,9 +10,15 @@ I used [Next.js](https://nextjs.org/) to build my new portfolio website because 
 - The UI concept design was built with Figma, but was tailored to my needs during development.
 - The data for the page currently resides in the `/data/data.js` file.
 
-### Light mode:
+## Maximum performance
+
+Achieved the highest possible score on lighthouse (as of 18.11.21)
+
+![Screenshot of lighthouse scoreboard](/assets/lighthouse.png)
+
+## Light mode:
 ![Screenshot of light mode version](/assets/light-mode.png)
-### Dark mode:
+## Dark mode:
 ![Screenshot of dark mode version](/assets/dark-mode.png)
 
 ## Running the project yourself

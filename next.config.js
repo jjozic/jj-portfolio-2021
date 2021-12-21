@@ -3,7 +3,7 @@ module.exports = {
     domains: ['picsum.photos'],
   },
   i18n: {
-    locales: ["en"],
-    defaultLocale: "en",
+    locales: ["en", "de"],
+    defaultLocale: "de",
   },
 }

@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '@/styles/Home.module.scss'
+import { useRouter } from 'next/router'
 
 import Navigation from '@/components/Navigation'
 import PageContent from '@/components/PageContent'
@@ -8,10 +9,12 @@ import Footer from '@/components/Footer'
 import { projects, experiences, skills } from '../data/data'
 
 export default function Home({ projects, experiences }) {
+  const router = useRouter();
+
   return (
     <>
       <Head>
-        <title>Julian Jozic</title>
+        <title>Julian Jozic {router.locale}</title>
         <meta name="description" content="Julian Jozic. Web Developer" />
         <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png" />

@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import Link from "next/link";
 import { FiMoon, FiSun } from "react-icons/fi";
 import { useTheme } from "next-themes";
@@ -6,6 +7,26 @@ import styles from "@/styles/Navigation.module.scss";
 
 const Navigation = () => {
   const { theme, setTheme } = useTheme();
+  
+  useEffect(() => {
+    const language = localStorage.getItem("language");
+    if (language) {
+      setLanguage(language);
+    }
+  }, []);
+
+  // change languague
+  const changeLanguage = () => {
+    if (language === "en") {
+      setLanguage("es");
+    } else {
+      setLanguage("en");
+    }
+  };
+
+  const setLanguage = (lang) => {
+    localStorage.setItem("language", lang);
+  };
 
   const changeTheme = () => {
     if (theme === "light") {

@@ -1,6 +1,4 @@
 import Head from 'next/head'
-import Image from 'next/image'
-import styles from '@/styles/Home.module.scss'
 
 import Navigation from '@/components/Navigation'
 import PageContent from '@/components/PageContent'
@@ -18,6 +16,7 @@ export default function Home({ projects, experiences }) {
         <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png" />
         <link rel="manifest" href="/favicons/site.webmanifest" />
         <link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="#5bbad5" />
+        <link rel="canonical" href="https://www.julianjozic.com" />
         <meta name="msapplication-TileColor" content="#ffc40d" />
         <meta name="theme-color" content="#cdd5fb" />
       </Head>

@@ -8,9 +8,9 @@
   --dark: #071a7e;
   --light: #ecefff;
   --nav-clr: rgba(87, 113, 243, 0.8);
-  --boxshadow: 8px 8px 33px #b0b7d8, -8px -8px 33px #eaf3ff;
-  --boxshadow-big: 8px 8px 33px #979db7, -8px -8px 33px #d3e0f1;
-  --boxshadow-project: 11px 11px 65px #9aa0bc, -11px -11px 65px #ffffff;
+  --boxshadow: 4px 4px 20px #b0b7d8, -4px -4px 20px #eaf3ff;
+  --boxshadow-big: 4px 4px 20px #a5abc6, -4px -4px 20px #d8e5f7;
+  --boxshadow-project: 6px 6px 30px #9aa0bc, -6px -6px 30px #ffffff;
   --project-background: linear-gradient(145deg, #dbe4ff, #b9c0e2);
   scroll-behavior: smooth;
 }
@@ -55,23 +55,27 @@ a {
   text-decoration: none;
 }
 
+h3 {
+  margin: 0.5rem 0;
+}
+
 .heading {
   position: relative;
-  padding: 3rem 0 0 0;
+  padding: 1.5rem 0 0 0;
   color: var(--dark);
-  text-align: center;
   font-size: 1.5rem;
   text-transform: uppercase;
 }
 
 .anchorOffset {
   position: absolute;
-  top: -75px;
+  top: -64px;
 }
 
 @media screen and (min-width: 769px) {
   .heading {
     padding: 3rem 0 1rem 0;
+    margin: 0 auto;
     font-size: 2rem;
   }
 }

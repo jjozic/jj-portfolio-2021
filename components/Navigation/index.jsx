@@ -30,20 +30,22 @@ const Navigation = () => {
     <header className={styles.navElement}>
       <nav className={styles.wrapper}>
         <ul>
-          <li className={styles.logoLi}>
+          <li>
             <Link href="/" passHref onClick={() => window.scrollTo({ top: 0 })}>
               <div className={styles.logo}>JJ</div>
             </Link>
           </li>
-          <li>
-            <Link href="#projects">Projects</Link>
-          </li>
-          <li>
-            <Link href="#experience">Experience</Link>
-          </li>
-          <li>
-            <Link href="#skills">Skills</Link>
-          </li>
+          <div className={styles.sectionsWrapper}>
+            <li>
+              <Link href="#projects">Projects</Link>
+            </li>
+            <li>
+              <Link href="#experience">Experience</Link>
+            </li>
+            <li>
+              <Link href="#skills">Skills</Link>
+            </li>
+          </div>
           <li>
             <button className={styles.toggleBtn} onClick={changeTheme}>
               {theme === "light" ? (

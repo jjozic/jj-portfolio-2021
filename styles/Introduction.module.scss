@@ -50,17 +50,15 @@
   }
   &:hover {
     box-shadow: var(--boxshadow-big);
-    transform: scale(1.05);
+    transform: scale(1.025);
   }
 }
 
 .imgWrapper {
-  max-width: 100px;
   & > img {
     border-radius: 6px;
   }
   @media screen and (min-width: 769px) {
-    max-width: none;
     background-image: radial-gradient(
       var(--primary) 1px,
       var(--background) 1px

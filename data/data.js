@@ -7,15 +7,19 @@ export const projects = [
     github: "https://github.com/jjozic/jj-portfolio-2021",
   },
   {
+    title: "Construction company landing page",
+    description:
+      "A landing page for a local construction company. Built with Nuxt (Vue.js).",
+    stack: "Nuxt, Vue.js, Figma",
+    website: "https://www.bau-more.at/",
+  },
+  {
     title: "Memento Mori",
     description:
       "Random stoic quote generation and a visual representation of your life",
     stack: "React.js, Tailwindcss, Axios",
     github: "https://github.com/jjozic/memento-mori-react",
     website: "https://memento-mori-react.vercel.app/",
-  },
-  {
-    title: "More projects will be added soon...",
   },
 ];
 
@@ -29,7 +33,7 @@ export const experiences = [
       "Developed and maintained the Booking Engine application, ensuring a smooth and user-friendly booking process",
       "Contributed to the creation of JaneGPT, an AI chatbot, to enhance customer interactions and support in the self-storage sector",
     ],
-    stack: "TypeScript, Vue.js 3, Tailwind CSS, NestJS, Laravel, Figma",
+    stack: "TypeScript, Vue.js 3, Tailwind CSS, NestJS, OpenAI, Laravel, Figma",
   },
   {
     duration: "Jul 2020 - Mar 2022",
@@ -68,7 +72,7 @@ export const skills = [
       "Node.js",
       "Next.js",
       "Vue.js",
-      "SASS",
+      "Nuxt",
       "Tailwind CSS",
       "REST APIs",
       "MongoDB",

@@ -29,13 +29,11 @@ const Navigation = () => {
   return (
     <header className={styles.navElement}>
       <nav className={styles.wrapper}>
-        <ul>
-          <li>
-            <Link href="/" passHref onClick={() => window.scrollTo({ top: 0 })}>
-              <div className={styles.logo}>JJ</div>
-            </Link>
-          </li>
-          <div className={styles.sectionsWrapper}>
+        <div>
+          <Link href="/" passHref onClick={() => window.scrollTo({ top: 0 })}>
+            <div className={styles.logo}>JJ</div>
+          </Link>
+          <ul className={styles.sectionsWrapper}>
             <li>
               <Link href="#projects">Projects</Link>
             </li>
@@ -45,17 +43,15 @@ const Navigation = () => {
             <li>
               <Link href="#skills">Skills</Link>
             </li>
-          </div>
-          <li>
-            <button className={styles.toggleBtn} onClick={changeTheme}>
-              {theme === "light" ? (
-                <FiMoon aria-label="Change to light mode" />
-              ) : (
-                <FiSun aria-label="Change to dark mode" />
-              )}
-            </button>
-          </li>
-        </ul>
+          </ul>
+          <button className={styles.toggleBtn} onClick={changeTheme}>
+            {theme === "light" ? (
+              <FiMoon aria-label="Change to light mode" />
+            ) : (
+              <FiSun aria-label="Change to dark mode" />
+            )}
+          </button>
+        </div>
       </nav>
     </header>
   );

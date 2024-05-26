@@ -22,10 +22,6 @@ const Navigation = () => {
     setMounted(true);
   }, []);
 
-  if (!mounted) {
-    return null;
-  }
-
   return (
     <header className={styles.navElement}>
       <nav className={styles.wrapper}>
@@ -45,7 +41,7 @@ const Navigation = () => {
             </li>
           </ul>
           <button className={styles.toggleBtn} onClick={changeTheme}>
-            {theme === "light" ? (
+            {theme === "light" || !mounted ? (
               <FiMoon aria-label="Change to light mode" />
             ) : (
               <FiSun aria-label="Change to dark mode" />

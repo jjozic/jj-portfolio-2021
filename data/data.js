@@ -21,9 +21,20 @@ export const projects = [
 
 export const experiences = [
   {
+    duration: "Apr 2022 - current",
+    name: "Kinnovis GmbH",
+    role: "Frontend Developer",
+    points: [
+      "Played a key role in the development and improvement of the Manager application, providing a reliable solution for self-storage operators",
+      "Developed and maintained the Booking Engine application, ensuring a smooth and user-friendly booking process",
+      "Contributed to the creation of JaneGPT, an AI chatbot, to enhance customer interactions and support in the self-storage sector",
+    ],
+    stack: "TypeScript, Vue.js 3, Tailwind CSS, NestJS, Laravel, Figma",
+  },
+  {
     duration: "Jul 2020 - Mar 2022",
     name: "RIS GmbH",
-    role: "Front-End Developer",
+    role: "Frontend Developer",
     points: [
       "Working on expanding the feature set of the custom CMS system with features like a WYSIWYG-editor, map integration (leaflet), address dropdowns, accessibility tools, and many more.",
       "Rewriting parts of the CMS system and improving the tech stack (integrating task runners, TypeScript support, …)",

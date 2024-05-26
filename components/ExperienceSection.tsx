@@ -1,6 +1,7 @@
+import { IExperience } from "@/data/data";
 import styles from "@/styles/Experience.module.scss";
 
-export default function Experience({ data }) {
+export default function Experience({ data }: { data: IExperience[] }) {
   return (
     <section>
       <h2 className="heading">

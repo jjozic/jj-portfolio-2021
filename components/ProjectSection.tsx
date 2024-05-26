@@ -1,9 +1,10 @@
-import ExternalLink from "helpers/ExternalLink";
+import ExternalLink from "@/helpers/ExternalLink";
 import { FiGithub, FiExternalLink } from "react-icons/fi";
 
 import styles from "@/styles/Projects.module.scss";
+import { IProject } from "@/data/data";
 
-export default function Projects({ data }) {
+export default function Projects({ data }: { data: IProject[] }) {
   return (
     <section>
       <h2 className="heading">

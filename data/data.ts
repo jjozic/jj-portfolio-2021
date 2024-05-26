@@ -1,4 +1,25 @@
-export const projects = [
+export interface IProject {
+  title: string;
+  description: string;
+  stack?: string;
+  github?: string;
+  website?: string;
+}
+
+export interface IExperience {
+  duration: string;
+  name: string;
+  role: string;
+  points: string[];
+  stack?: string;
+}
+
+export interface ISkill {
+  name: string;
+  skills: string[];
+}
+
+export const projects: IProject[] = [
   {
     title: "Next.js Personal Portfolio",
     description:
@@ -23,7 +44,7 @@ export const projects = [
   },
 ];
 
-export const experiences = [
+export const experiences: IExperience[] = [
   {
     duration: "Apr 2022 - current",
     name: "Kinnovis GmbH",
@@ -60,7 +81,7 @@ export const experiences = [
   },
 ];
 
-export const skills = [
+export const skills: ISkill[] = [
   {
     name: "Languages",
     skills: ["JavaScript", "TypeScript", "C#", "Java"],

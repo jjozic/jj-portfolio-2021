@@ -1,6 +1,7 @@
+import { ISkill } from "@/data/data";
 import styles from "@/styles/Skills.module.scss";
 
-export default function Skills({ data }) {
+export default function Skills({ data }: { data: ISkill[] }) {
   return (
     <section>
       <h2 className="heading">
@@ -23,7 +24,7 @@ export default function Skills({ data }) {
   );
 }
 
-function Skill({ name, key }) {
+function Skill({ name, key }: { name: string; key: number }) {
   return (
     <span className={styles.skillElement} key={key}>
       {name}

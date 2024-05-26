@@ -1,8 +1,8 @@
 import { FiGithub, FiMail } from "react-icons/fi";
 import Image from "next/image";
-import profilePic from "./me.webp";
+import profilePic from "@/assets/me.webp";
 
-import ExternalLink from "helpers/ExternalLink";
+import ExternalLink from "@/helpers/ExternalLink";
 import styles from "@/styles/Introduction.module.scss";
 
 export default function Introduction() {

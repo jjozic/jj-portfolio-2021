@@ -1,11 +1,17 @@
 import Head from "next/head";
 
 import Navigation from "@/components/Navigation";
-import PageContent from "@/components/PageContent";
+import MainContent from "@/components/MainContent";
 import Footer from "@/components/Footer";
-import { projects, experiences, skills } from "../data/data";
+import { projects, experiences, skills } from "@/data/data";
 
-export default function Home({ projects, experiences }) {
+interface Props {
+  projects: typeof projects;
+  experiences: typeof experiences;
+  skills: typeof skills;
+}
+
+export default function Home({ projects, experiences, skills }: Props) {
   return (
     <>
       <Head>
@@ -39,7 +45,7 @@ export default function Home({ projects, experiences }) {
         <meta name="theme-color" content="#cdd5fb" />
       </Head>
       <Navigation />
-      <PageContent
+      <MainContent
         projects={projects}
         experiences={experiences}
         skills={skills}

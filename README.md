@@ -8,11 +8,11 @@ I used [Next.js](https://nextjs.org/) to build my new portfolio website because 
 - For deployment I used [Vercel](https://vercel.com/)
 - The domain was purchased from [Porkbun](https://porkbun.com/)
 - The UI concept design was built with Figma, but was tailored to my needs during development.
-- The data for the page currently resides in the `/data/data.js` file.
+- The data for the page currently resides in the `/data/data.ts` file.
 
 ## Maximum performance
 
-Achieved the highest possible score on lighthouse (as of 18.11.21)
+Achieved the highest possible score on lighthouse (as of 26.05.24)
 
 ![Screenshot of lighthouse scoreboard](/assets/lighthouse.png)
 
@@ -44,8 +44,4 @@ pnpm dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.

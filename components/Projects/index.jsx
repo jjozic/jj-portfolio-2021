@@ -23,12 +23,20 @@ export default function Projects({ data }) {
             <div className={styles.links}>
               {project.github && (
                 <ExternalLink link={project.github} title="Github">
-                  <FiGithub className={styles.icon} aria-hidden="true" focusable="false"/>
+                  <FiGithub
+                    className={styles.icon}
+                    aria-hidden="true"
+                    focusable="false"
+                  />
                 </ExternalLink>
               )}
               {project.website && (
                 <ExternalLink link={project.website} title="Open Demo">
-                  <FiExternalLink className={styles.icon} aria-hidden="true" focusable="false"/>
+                  <FiExternalLink
+                    className={styles.icon}
+                    aria-hidden="true"
+                    focusable="false"
+                  />
                 </ExternalLink>
               )}
             </div>

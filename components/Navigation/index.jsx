@@ -3,8 +3,10 @@ import { FiMoon, FiSun } from "react-icons/fi";
 import { useTheme } from "next-themes";
 
 import styles from "@/styles/Navigation.module.scss";
+import { useState, useEffect } from "react";
 
 const Navigation = () => {
+  const [mounted, setMounted] = useState(false);
   const { theme, setTheme } = useTheme();
 
   const changeTheme = () => {
@@ -14,6 +16,15 @@ const Navigation = () => {
       setTheme("light");
     }
   };
+
+  // useEffect only runs on the client, so now we can safely show the UI
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) {
+    return null;
+  }
 
   return (
     <header className={styles.navElement}>

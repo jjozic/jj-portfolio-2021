@@ -1,6 +1,5 @@
 import styles from "@/styles/Skills.module.scss";
 
-
 export default function Skills({ data }) {
   return (
     <section>
@@ -15,7 +14,7 @@ export default function Skills({ data }) {
             <div className={styles.skills}>
               {s.skills?.map((language, index) => (
                 <Skill name={language} key={index} />
-                ))}
+              ))}
             </div>
           </div>
         ))}

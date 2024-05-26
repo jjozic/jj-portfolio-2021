@@ -10,14 +10,17 @@ const Footer = () => {
         <ExternalLink link="mailto:jjozic98@gmail.com" title="My Email">
           <FiMail className={styles.icon} />
         </ExternalLink>
-        <ExternalLink link="https://www.linkedin.com/in/jjozic" title="LinkedIn Profile">
+        <ExternalLink
+          link="https://www.linkedin.com/in/jjozic"
+          title="LinkedIn Profile"
+        >
           <FiLinkedin className={styles.icon} />
         </ExternalLink>
         <ExternalLink link="https://github.com/jjozic" title="Github profile">
           <FiGithub className={styles.icon} />
         </ExternalLink>
       </div>
-      <p>©2021 Julian Jozic - Built with Next.js</p>
+      <p>©{new Date().getFullYear()} Julian Jozic - Built with Next.js</p>
     </footer>
   );
 };

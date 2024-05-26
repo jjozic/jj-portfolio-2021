@@ -12,13 +12,16 @@ export default function Introduction() {
         <h1>
           Hi, I&apos;m <strong>Julian Jozic!</strong>
         </h1>
-        <p>I&apos;m a Front End Developer, with a love for modern technologies & UIs!</p>
+        <p>
+          I&apos;m a Front End Developer, with a love for modern technologies &
+          UIs!
+        </p>
         <div className={styles.links}>
           <ExternalLink link="mailto:jjozic98@gmail.com">
-            <FiMail aria-hidden="true" focusable="false"/> Contact Me
+            <FiMail aria-hidden="true" focusable="false" /> Contact Me
           </ExternalLink>
           <ExternalLink link="https://github.com/jjozic">
-            <FiGithub aria-hidden="true" focusable="false"/> Github
+            <FiGithub aria-hidden="true" focusable="false" /> Github
           </ExternalLink>
         </div>
       </div>

@@ -56,15 +56,18 @@
 
 .imgWrapper {
   max-width: 100px;
-  & > span {
+  & > img {
     border-radius: 6px;
   }
   @media screen and (min-width: 769px) {
     max-width: none;
-    background-image: radial-gradient(var(--primary) 1px, var(--background) 1px);
+    background-image: radial-gradient(
+      var(--primary) 1px,
+      var(--background) 1px
+    );
     background-size: calc(10 * 1px) calc(10 * 1px);
     margin-top: 5rem;
-    & > span {
+    & > img {
       border-radius: 0;
       transform: translate(35px, -20px);
     }

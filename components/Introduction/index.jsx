@@ -1,6 +1,6 @@
 import { FiGithub, FiMail } from "react-icons/fi";
 import Image from "next/image";
-import profilePic from "./me.jpg";
+import profilePic from "./me.webp";
 
 import ExternalLink from "helpers/ExternalLink";
 import styles from "@/styles/Introduction.module.scss";
@@ -29,7 +29,18 @@ export default function Introduction() {
         className={`${styles.imgWrapper}
         pattern-dots-md gray-light`}
       >
-        <Image src={profilePic} alt="Picture of me" height={150} width={150} />
+        <Image
+          alt="Picture of me"
+          src={profilePic}
+          loading="eager"
+          placeholder="blur"
+          height={150}
+          width={150}
+          style={{
+            maxWidth: "100%",
+            height: "auto",
+          }}
+        />
       </div>
     </section>
   );

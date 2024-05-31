@@ -11,7 +11,7 @@ interface Props {
   skills: ISkill[];
 }
 
-const PageContent = ({ projects, experiences, skills }: Props) => {
+export default function MainContent({ projects, experiences, skills }: Props) {
   return (
     <main className={styles.wrapper}>
       <Introduction />
@@ -21,6 +21,4 @@ const PageContent = ({ projects, experiences, skills }: Props) => {
       {/* <Contact /> */}
     </main>
   );
-};
-
-export default PageContent;
+}

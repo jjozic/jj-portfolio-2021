@@ -1,6 +1,5 @@
 import { FiGithub, FiMail } from "react-icons/fi";
 import Image from "next/image";
-import profilePic from "@/assets/me.webp";
 
 import ExternalLink from "@/helpers/ExternalLink";
 import styles from "@/styles/Introduction.module.scss";
@@ -31,9 +30,8 @@ export default function Introduction() {
       >
         <Image
           alt="Picture of me"
-          src={profilePic}
+          src="/me.webp"
           loading="eager"
-          placeholder="blur"
           height={150}
           width={150}
           style={{

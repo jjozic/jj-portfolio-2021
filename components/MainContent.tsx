@@ -7,17 +7,17 @@ import { IExperience, IProject, ISkill } from "@/data/data";
 
 interface Props {
   projects: IProject[];
-  experiences: IExperience[];
-  skills: ISkill[];
+  experiences?: IExperience[];
+  skills?: ISkill[];
 }
 
 export default function MainContent({ projects, experiences, skills }: Props) {
   return (
     <main className={styles.wrapper}>
       <Introduction />
-      <Projects data={projects} />
-      <Experience data={experiences} />
-      <Skills data={skills} />
+      {projects && <Projects data={projects} />}
+      {experiences && <Experience data={experiences} />}
+      {skills && <Skills data={skills} />}
       {/* <Contact /> */}
     </main>
   );

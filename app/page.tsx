@@ -17,7 +17,12 @@ export const viewport: Viewport = {
 
 async function getData() {
   return {
-    projects,
+    projects: projects ?? [
+      {
+        title: "Projects coming soon...",
+        description: "",
+      },
+    ],
     experiences,
     skills,
   };
